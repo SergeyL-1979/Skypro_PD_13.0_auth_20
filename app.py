@@ -32,7 +32,7 @@ def create_app(config: Config) -> Flask:
 
 def configure_app(application: Flask):
     db.init_app(application)
-    api = Api(app=app, title="SkyPro: auth_JWT_lesson_19", authorizations=authentication)
+    api = Api(app=app, title="SkyPro: auth_JWT_auth_20", authorizations=authentication)
 
     api.add_namespace(auth_ns)
 
